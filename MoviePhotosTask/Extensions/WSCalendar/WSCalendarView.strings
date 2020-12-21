@@ -1,0 +1,114 @@
+
+/* Class = "UILabel"; text = "2"; ObjectID = "4QH-cL-2kw"; */
+"4QH-cL-2kw.text" = "2";
+
+/* Class = "UILabel"; text = "9"; ObjectID = "4m2-Og-BQZ"; */
+"4m2-Og-BQZ.text" = "9";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "65f-bs-wPc"; */
+"65f-bs-wPc.text" = "1";
+
+/* Class = "UILabel"; text = "Month-YEAR"; ObjectID = "6ap-fV-vSy"; */
+"6ap-fV-vSy.text" = "Month-YEAR";
+
+/* Class = "UIButton"; normalTitle = "Select"; ObjectID = "7V5-8q-dQb"; */
+"7V5-8q-dQb.normalTitle" = "اختر";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "AO3-6j-Prc"; */
+"AO3-6j-Prc.text" = "5";
+
+/* Class = "UILabel"; text = "13"; ObjectID = "AaK-fd-emd"; */
+"AaK-fd-emd.text" = "13";
+
+/* Class = "UILabel"; text = "29"; ObjectID = "Atv-8b-MiV"; */
+"Atv-8b-MiV.text" = "29";
+
+/* Class = "UILabel"; text = "22"; ObjectID = "G6f-zF-PqB"; */
+"G6f-zF-PqB.text" = "22";
+
+/* Class = "UILabel"; text = "Event All Cities"; ObjectID = "JzL-Se-oVf"; */
+"JzL-Se-oVf.text" = "فعاليات جملة المدن";
+
+/* Class = "UILabel"; text = "21"; ObjectID = "Kyr-nL-pkK"; */
+"Kyr-nL-pkK.text" = "21";
+
+/* Class = "UILabel"; text = "20"; ObjectID = "Lim-AI-xwK"; */
+"Lim-AI-xwK.text" = "20";
+
+/* Class = "UILabel"; text = "27"; ObjectID = "OYQ-aE-qX5"; */
+"OYQ-aE-qX5.text" = "27";
+
+/* Class = "UILabel"; text = "25"; ObjectID = "QhU-v1-EiG"; */
+"QhU-v1-EiG.text" = "25";
+
+/* Class = "UILabel"; text = "Change"; ObjectID = "SJx-S1-GxN"; */
+"SJx-S1-GxN.text" = "تغيير";
+
+/* Class = "UILabel"; text = "14"; ObjectID = "WbI-V0-i0q"; */
+"WbI-V0-i0q.text" = "14";
+
+/* Class = "UILabel"; text = "18"; ObjectID = "Wi2-za-3wB"; */
+"Wi2-za-3wB.text" = "18";
+
+/* Class = "UILabel"; text = "6"; ObjectID = "YZF-v6-3fx"; */
+"YZF-v6-3fx.text" = "6";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "a7E-HX-2LR"; */
+"a7E-HX-2LR.text" = "10";
+
+/* Class = "UILabel"; text = "31"; ObjectID = "agU-3M-EgD"; */
+"agU-3M-EgD.text" = "31";
+
+/* Class = "UILabel"; text = "11"; ObjectID = "amn-rk-Vru"; */
+"amn-rk-Vru.text" = "11";
+
+/* Class = "UILabel"; text = "26"; ObjectID = "ccj-RF-ksp"; */
+"ccj-RF-ksp.text" = "26";
+
+/* Class = "UIButton"; normalTitle = "Close"; ObjectID = "elv-7t-khL"; */
+"elv-7t-khL.normalTitle" = "الغاء";
+
+/* Class = "UILabel"; text = "15"; ObjectID = "fOA-Hc-Fuc"; */
+"fOA-Hc-Fuc.text" = "15";
+
+/* Class = "UILabel"; text = "19"; ObjectID = "gue-E2-g7y"; */
+"gue-E2-g7y.text" = "19";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "ida-GJ-mkA"; */
+"ida-GJ-mkA.text" = "3";
+
+/* Class = "UILabel"; text = "28"; ObjectID = "k59-ZO-9E8"; */
+"k59-ZO-9E8.text" = "28";
+
+/* Class = "UILabel"; text = "8"; ObjectID = "kfl-kT-AFR"; */
+"kfl-kT-AFR.text" = "8";
+
+/* Class = "UILabel"; text = "23"; ObjectID = "lNN-hC-t5l"; */
+"lNN-hC-t5l.text" = "23";
+
+/* Class = "UILabel"; text = "4"; ObjectID = "lhO-xW-PSv"; */
+"lhO-xW-PSv.text" = "4";
+
+/* Class = "UILabel"; text = "30"; ObjectID = "nqN-PH-quc"; */
+"nqN-PH-quc.text" = "30";
+
+/* Class = "UILabel"; text = "17"; ObjectID = "ptm-C5-vRw"; */
+"ptm-C5-vRw.text" = "17";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "rVf-KL-LRe"; */
+"rVf-KL-LRe.text" = "الدولة";
+
+/* Class = "UILabel"; text = "12"; ObjectID = "vOk-E9-Evg"; */
+"vOk-E9-Evg.text" = "12";
+
+/* Class = "UILabel"; text = "16"; ObjectID = "wef-BR-08q"; */
+"wef-BR-08q.text" = "16";
+
+/* Class = "UILabel"; text = "24"; ObjectID = "ysZ-Yk-pNu"; */
+"ysZ-Yk-pNu.text" = "24";
+
+/* Class = "UILabel"; text = "7"; ObjectID = "ywb-KD-ng7"; */
+"ywb-KD-ng7.text" = "7";
+
+/* Class = "UILabel"; text = "Day"; ObjectID = "zPh-9V-OW4"; */
+"zPh-9V-OW4.text" = "اليوم";

@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SCz-bi-Sh6" customClass="WSCalendarView">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="470"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFS-re-2Sx" customClass="UIViewX" customModule="Smartista" customModuleProvider="target">
+                    <rect key="frame" x="5" y="5" width="494" height="460"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCq-xr-tMc">
+                            <rect key="frame" x="0.0" y="0.0" width="494" height="80"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event All Cities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzL-Se-oVf">
+                                    <rect key="frame" x="20" y="5" width="264" height="70"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzB-Ii-8Md" customClass="UIViewX" customModule="Smartista" customModuleProvider="target">
+                                    <rect key="frame" x="374" y="25" width="100" height="30"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVf-KL-LRe">
+                                            <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop-down" translatesAutoresizingMaskIntoConstraints="NO" id="MnR-5Q-Blh">
+                                            <rect key="frame" x="65" y="5" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="bfe-cS-qNs"/>
+                                                <constraint firstAttribute="height" constant="20" id="kIt-0S-KEB"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpv-fS-Rre">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="vpv-fS-Rre" firstAttribute="top" secondItem="QzB-Ii-8Md" secondAttribute="top" id="62T-cy-7bl"/>
+                                        <constraint firstAttribute="height" constant="30" id="Cq7-n6-vf0"/>
+                                        <constraint firstItem="rVf-KL-LRe" firstAttribute="top" secondItem="QzB-Ii-8Md" secondAttribute="top" id="Dx8-4e-6Yn"/>
+                                        <constraint firstAttribute="trailing" secondItem="MnR-5Q-Blh" secondAttribute="trailing" constant="15" id="Ia9-8h-ale"/>
+                                        <constraint firstAttribute="trailing" secondItem="vpv-fS-Rre" secondAttribute="trailing" id="M95-5u-K4l"/>
+                                        <constraint firstItem="rVf-KL-LRe" firstAttribute="leading" secondItem="QzB-Ii-8Md" secondAttribute="leading" id="Nix-Nt-kAB"/>
+                                        <constraint firstItem="MnR-5Q-Blh" firstAttribute="centerY" secondItem="QzB-Ii-8Md" secondAttribute="centerY" id="ULi-qJ-XET"/>
+                                        <constraint firstItem="vpv-fS-Rre" firstAttribute="leading" secondItem="QzB-Ii-8Md" secondAttribute="leading" id="ZJG-lA-YEJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="vpv-fS-Rre" secondAttribute="bottom" id="bBo-Vz-lRE"/>
+                                        <constraint firstItem="MnR-5Q-Blh" firstAttribute="leading" secondItem="rVf-KL-LRe" secondAttribute="trailing" id="efe-dp-2mg"/>
+                                        <constraint firstAttribute="width" constant="100" id="hKD-oR-HHA"/>
+                                        <constraint firstAttribute="bottom" secondItem="rVf-KL-LRe" secondAttribute="bottom" id="lpn-80-Xx1"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2K-Bv-Edo" customClass="UIViewX" customModule="Smartista" customModuleProvider="target">
+                                    <rect key="frame" x="294" y="25" width="70" height="30"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJx-S1-GxN">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgy-Nf-YGs">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="lgy-Nf-YGs" firstAttribute="top" secondItem="R2K-Bv-Edo" secondAttribute="top" id="0bK-5n-cPM"/>
+                                        <constraint firstAttribute="bottom" secondItem="SJx-S1-GxN" secondAttribute="bottom" id="5FT-7i-Iv0"/>
+                                        <constraint firstAttribute="trailing" secondItem="SJx-S1-GxN" secondAttribute="trailing" id="5dx-uI-IlQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="lgy-Nf-YGs" secondAttribute="trailing" id="Af9-cK-a20"/>
+                                        <constraint firstAttribute="width" constant="70" id="R3E-gd-yZ5"/>
+                                        <constraint firstAttribute="bottom" secondItem="lgy-Nf-YGs" secondAttribute="bottom" id="XBb-wb-KWC"/>
+                                        <constraint firstItem="SJx-S1-GxN" firstAttribute="top" secondItem="R2K-Bv-Edo" secondAttribute="top" id="dhF-e3-r8P"/>
+                                        <constraint firstItem="SJx-S1-GxN" firstAttribute="leading" secondItem="R2K-Bv-Edo" secondAttribute="leading" id="gLD-nB-ODf"/>
+                                        <constraint firstItem="lgy-Nf-YGs" firstAttribute="leading" secondItem="R2K-Bv-Edo" secondAttribute="leading" id="qgB-uB-Jkg"/>
+                                        <constraint firstAttribute="height" constant="30" id="qtK-ZL-qCO"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="MainColor3"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="JzL-Se-oVf" secondAttribute="bottom" constant="5" id="4qz-Fy-E2S"/>
+                                <constraint firstAttribute="height" constant="80" id="I5z-Xs-CNy"/>
+                                <constraint firstItem="JzL-Se-oVf" firstAttribute="top" secondItem="YCq-xr-tMc" secondAttribute="top" constant="5" id="Lxn-8t-Thl"/>
+                                <constraint firstAttribute="trailing" secondItem="QzB-Ii-8Md" secondAttribute="trailing" constant="20" id="WHf-kN-J4O"/>
+                                <constraint firstItem="QzB-Ii-8Md" firstAttribute="centerY" secondItem="YCq-xr-tMc" secondAttribute="centerY" id="b83-hF-eNI"/>
+                                <constraint firstItem="JzL-Se-oVf" firstAttribute="leading" secondItem="YCq-xr-tMc" secondAttribute="leading" constant="20" id="b8G-L4-LUB"/>
+                                <constraint firstItem="QzB-Ii-8Md" firstAttribute="leading" secondItem="R2K-Bv-Edo" secondAttribute="trailing" constant="10" id="bOv-Zd-m3e"/>
+                                <constraint firstItem="R2K-Bv-Edo" firstAttribute="leading" secondItem="JzL-Se-oVf" secondAttribute="trailing" constant="10" id="cL3-cg-ZDQ"/>
+                                <constraint firstItem="R2K-Bv-Edo" firstAttribute="centerY" secondItem="QzB-Ii-8Md" secondAttribute="centerY" id="itZ-DD-H7u"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKW-3i-CLi">
+                            <rect key="frame" x="15" y="95" width="464" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mn9-w4-xhh">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="7ns-SW-oqm"/>
+                                    </constraints>
+                                    <state key="normal" image="previous"/>
+                                    <connections>
+                                        <action selector="PrevClicked:" destination="SCz-bi-Sh6" eventType="touchUpInside" id="85g-vR-0A2"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month-YEAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ap-fV-vSy">
+                                    <rect key="frame" x="30" y="0.0" width="404" height="30"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" name="MainColor1"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6g-jJ-5NC">
+                                    <rect key="frame" x="434" y="0.0" width="30" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="e0Z-FB-aQ9"/>
+                                    </constraints>
+                                    <state key="normal" image="next"/>
+                                    <connections>
+                                        <action selector="NextClicked:" destination="SCz-bi-Sh6" eventType="touchUpInside" id="Tn1-9m-op4"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="bzX-td-jkL"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eSL-kA-ogA">
+                            <rect key="frame" x="15" y="140" width="464" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="zPh-9V-OW4">
+                                    <rect key="frame" x="0.0" y="0.0" width="464" height="30"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="kjY-a1-Meu"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OMc-my-v1Y">
+                            <rect key="frame" x="20" y="175" width="454" height="200"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8Rl-on-Daw">
+                                    <rect key="frame" x="0.0" y="0.0" width="454" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65f-bs-wPc" customClass="WSLabel">
+                                            <rect key="frame" x="0.0" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QH-cL-2kw" customClass="WSLabel">
+                                            <rect key="frame" x="66" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ida-GJ-mkA" customClass="WSLabel">
+                                            <rect key="frame" x="132" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhO-xW-PSv" customClass="WSLabel">
+                                            <rect key="frame" x="198" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO3-6j-Prc" customClass="WSLabel">
+                                            <rect key="frame" x="264" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZF-v6-3fx" customClass="WSLabel">
+                                            <rect key="frame" x="330" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywb-KD-ng7" customClass="WSLabel">
+                                            <rect key="frame" x="396" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ANh-KS-nc6">
+                                    <rect key="frame" x="0.0" y="40" width="454" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfl-kT-AFR" customClass="WSLabel">
+                                            <rect key="frame" x="0.0" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4m2-Og-BQZ" customClass="WSLabel">
+                                            <rect key="frame" x="66" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7E-HX-2LR" customClass="WSLabel">
+                                            <rect key="frame" x="132" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amn-rk-Vru" customClass="WSLabel">
+                                            <rect key="frame" x="198" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOk-E9-Evg" customClass="WSLabel">
+                                            <rect key="frame" x="264" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaK-fd-emd" customClass="WSLabel">
+                                            <rect key="frame" x="330" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbI-V0-i0q" customClass="WSLabel">
+                                            <rect key="frame" x="396" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EcA-sS-ucA">
+                                    <rect key="frame" x="0.0" y="80" width="454" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOA-Hc-Fuc" customClass="WSLabel">
+                                            <rect key="frame" x="0.0" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wef-BR-08q" customClass="WSLabel">
+                                            <rect key="frame" x="66" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptm-C5-vRw" customClass="WSLabel">
+                                            <rect key="frame" x="132" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi2-za-3wB" customClass="WSLabel">
+                                            <rect key="frame" x="198" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gue-E2-g7y" customClass="WSLabel">
+                                            <rect key="frame" x="264" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lim-AI-xwK" customClass="WSLabel">
+                                            <rect key="frame" x="330" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyr-nL-pkK" customClass="WSLabel">
+                                            <rect key="frame" x="396" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-fI-f6g">
+                                    <rect key="frame" x="0.0" y="120" width="454" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6f-zF-PqB" customClass="WSLabel">
+                                            <rect key="frame" x="0.0" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNN-hC-t5l" customClass="WSLabel">
+                                            <rect key="frame" x="66" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysZ-Yk-pNu" customClass="WSLabel">
+                                            <rect key="frame" x="132" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhU-v1-EiG" customClass="WSLabel">
+                                            <rect key="frame" x="198" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccj-RF-ksp" customClass="WSLabel">
+                                            <rect key="frame" x="264" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYQ-aE-qX5" customClass="WSLabel">
+                                            <rect key="frame" x="330" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k59-ZO-9E8" customClass="WSLabel">
+                                            <rect key="frame" x="396" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aY5-fa-sPM">
+                                    <rect key="frame" x="0.0" y="160" width="454" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atv-8b-MiV" customClass="WSLabel">
+                                            <rect key="frame" x="0.0" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqN-PH-quc" customClass="WSLabel">
+                                            <rect key="frame" x="66" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agU-3M-EgD" customClass="WSLabel">
+                                            <rect key="frame" x="132" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdd-he-Wir" customClass="WSLabel">
+                                            <rect key="frame" x="198" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic1-no-HGV">
+                                            <rect key="frame" x="264" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wp7-lx-Nzc">
+                                            <rect key="frame" x="330" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDG-yJ-B9t">
+                                            <rect key="frame" x="396" y="0.0" width="58" height="40"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="7WI-AR-OaN"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4oi-Di-PWS">
+                            <rect key="frame" x="142" y="395" width="210" height="35"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7V5-8q-dQb" customClass="UIButtonX" customModule="Smartista" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="35"/>
+                                    <color key="backgroundColor" name="MainColor1"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="CX6-ni-Vaf"/>
+                                        <constraint firstAttribute="height" constant="35" id="Q9t-ga-mhL"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <state key="normal" title="Select">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="17.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="okAciton:" destination="SCz-bi-Sh6" eventType="touchUpInside" id="bSO-iI-zRC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elv-7t-khL" customClass="UIButtonX" customModule="Smartista" customModuleProvider="target">
+                                    <rect key="frame" x="110" y="0.0" width="100" height="35"/>
+                                    <color key="backgroundColor" name="MainColor1"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <state key="normal" title="Close">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="17.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="cancelAction:" destination="SCz-bi-Sh6" eventType="touchUpInside" id="Tx4-AQ-Ww7"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="eSL-kA-ogA" secondAttribute="trailing" constant="15" id="0kW-b5-djD"/>
+                        <constraint firstItem="eSL-kA-ogA" firstAttribute="top" secondItem="XKW-3i-CLi" secondAttribute="bottom" constant="15" id="8ZS-Pm-IoJ"/>
+                        <constraint firstItem="XKW-3i-CLi" firstAttribute="leading" secondItem="jFS-re-2Sx" secondAttribute="leading" constant="15" id="EXw-kS-NQl"/>
+                        <constraint firstAttribute="trailing" secondItem="XKW-3i-CLi" secondAttribute="trailing" constant="15" id="M3J-F1-JgZ"/>
+                        <constraint firstItem="4oi-Di-PWS" firstAttribute="centerX" secondItem="jFS-re-2Sx" secondAttribute="centerX" id="Rzw-0v-lVV"/>
+                        <constraint firstAttribute="trailing" secondItem="OMc-my-v1Y" secondAttribute="trailing" constant="20" id="TMY-0Y-gDX"/>
+                        <constraint firstAttribute="trailing" secondItem="YCq-xr-tMc" secondAttribute="trailing" id="UDu-ej-mjs"/>
+                        <constraint firstItem="eSL-kA-ogA" firstAttribute="leading" secondItem="jFS-re-2Sx" secondAttribute="leading" constant="15" id="aSn-6h-b3T"/>
+                        <constraint firstItem="XKW-3i-CLi" firstAttribute="top" secondItem="YCq-xr-tMc" secondAttribute="bottom" constant="15" id="bC5-tf-nsy"/>
+                        <constraint firstItem="OMc-my-v1Y" firstAttribute="leading" secondItem="jFS-re-2Sx" secondAttribute="leading" constant="20" id="eQY-59-Jkq"/>
+                        <constraint firstItem="YCq-xr-tMc" firstAttribute="top" secondItem="jFS-re-2Sx" secondAttribute="top" id="jf2-zJ-cZs"/>
+                        <constraint firstItem="4oi-Di-PWS" firstAttribute="top" secondItem="OMc-my-v1Y" secondAttribute="bottom" constant="20" id="jmE-kQ-0Bj"/>
+                        <constraint firstItem="YCq-xr-tMc" firstAttribute="leading" secondItem="jFS-re-2Sx" secondAttribute="leading" id="nzG-oe-1gW"/>
+                        <constraint firstItem="OMc-my-v1Y" firstAttribute="top" secondItem="eSL-kA-ogA" secondAttribute="bottom" constant="5" id="zvJ-3V-fRF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.40000000000000002"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jFS-re-2Sx" secondAttribute="trailing" constant="5" id="3KG-gx-qI6"/>
+                <constraint firstItem="jFS-re-2Sx" firstAttribute="leading" secondItem="SCz-bi-Sh6" secondAttribute="leading" constant="5" id="LGe-xY-QpG"/>
+                <constraint firstAttribute="bottom" secondItem="jFS-re-2Sx" secondAttribute="bottom" constant="5" id="qS8-tP-YzL"/>
+                <constraint firstItem="jFS-re-2Sx" firstAttribute="top" secondItem="SCz-bi-Sh6" secondAttribute="top" constant="5" id="qxU-gU-z6q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnBarDate" destination="6ap-fV-vSy" id="cIN-8Q-0uH"/>
+                <outlet property="btnCancel" destination="elv-7t-khL" id="V6O-Y8-SaN"/>
+                <outlet property="btnOK" destination="7V5-8q-dQb" id="qha-dt-da0"/>
+                <outlet property="lblDate1" destination="65f-bs-wPc" id="ha0-0y-86V"/>
+                <outlet property="lblDate10" destination="a7E-HX-2LR" id="OSW-vT-kbh"/>
+                <outlet property="lblDate11" destination="amn-rk-Vru" id="R0f-fc-3rT"/>
+                <outlet property="lblDate12" destination="vOk-E9-Evg" id="dmX-UD-xw7"/>
+                <outlet property="lblDate13" destination="AaK-fd-emd" id="T2q-Tx-CUI"/>
+                <outlet property="lblDate14" destination="WbI-V0-i0q" id="c18-xy-jqa"/>
+                <outlet property="lblDate15" destination="fOA-Hc-Fuc" id="rM6-M7-V8T"/>
+                <outlet property="lblDate16" destination="wef-BR-08q" id="R3t-uY-FBU"/>
+                <outlet property="lblDate17" destination="ptm-C5-vRw" id="KF9-wL-5OJ"/>
+                <outlet property="lblDate18" destination="Wi2-za-3wB" id="ReD-kS-Z8a"/>
+                <outlet property="lblDate19" destination="gue-E2-g7y" id="jv9-aL-JZv"/>
+                <outlet property="lblDate2" destination="4QH-cL-2kw" id="2Sb-J6-MkB"/>
+                <outlet property="lblDate20" destination="Lim-AI-xwK" id="uU7-9b-y4z"/>
+                <outlet property="lblDate21" destination="Kyr-nL-pkK" id="GL5-Ly-N1H"/>
+                <outlet property="lblDate22" destination="G6f-zF-PqB" id="sLn-G2-HdQ"/>
+                <outlet property="lblDate23" destination="lNN-hC-t5l" id="XM9-Cc-7QI"/>
+                <outlet property="lblDate24" destination="ysZ-Yk-pNu" id="fso-4A-8df"/>
+                <outlet property="lblDate25" destination="QhU-v1-EiG" id="teZ-f0-bu4"/>
+                <outlet property="lblDate26" destination="ccj-RF-ksp" id="5R3-mC-h2j"/>
+                <outlet property="lblDate27" destination="OYQ-aE-qX5" id="TnE-mE-hPd"/>
+                <outlet property="lblDate28" destination="k59-ZO-9E8" id="PhY-M8-6Ui"/>
+                <outlet property="lblDate29" destination="Atv-8b-MiV" id="M6I-vc-QHk"/>
+                <outlet property="lblDate3" destination="ida-GJ-mkA" id="spJ-sH-JgW"/>
+                <outlet property="lblDate30" destination="nqN-PH-quc" id="Rq3-sN-jox"/>
+                <outlet property="lblDate31" destination="agU-3M-EgD" id="2EP-wz-JDP"/>
+                <outlet property="lblDate4" destination="lhO-xW-PSv" id="Pp5-aw-qGX"/>
+                <outlet property="lblDate5" destination="AO3-6j-Prc" id="jp0-iE-NfF"/>
+                <outlet property="lblDate6" destination="YZF-v6-3fx" id="xLm-fP-XUU"/>
+                <outlet property="lblDate7" destination="ywb-KD-ng7" id="mWO-um-cV8"/>
+                <outlet property="lblDate8" destination="kfl-kT-AFR" id="gKl-cV-VTo"/>
+                <outlet property="lblDate9" destination="4m2-Og-BQZ" id="slc-EL-yBw"/>
+                <outlet property="lblWeekDate" destination="zPh-9V-OW4" id="PfR-Iw-7Qn"/>
+            </connections>
+            <point key="canvasLocation" x="-468.75" y="72.887323943661968"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="drop-down" width="46" height="56"/>
+        <image name="next" width="49" height="56"/>
+        <image name="previous" width="49" height="56"/>
+        <namedColor name="MainColor1">
+            <color red="0.14599999785423279" green="0.041999999433755875" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="MainColor3">
+            <color red="0.9570000171661377" green="0.9570000171661377" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
